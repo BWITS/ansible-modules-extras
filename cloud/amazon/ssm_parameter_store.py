@@ -21,7 +21,7 @@ DOCUMENTATION = '''
 module: ssm_parameter_store
 short_description: Manage key-value pairs in aws parameter store.
 description:
-  - Manage key-vaule pairs in aws parameter store.
+  - Manage key-value pairs in aws parameter store.
 version_added: "2.3"
 options:
   name:
@@ -72,7 +72,7 @@ requirements: [ botocore, boto3 ]
 '''
 
 EXAMPLES = '''
-- name: Create or update key/vaule pair in aws parameter store
+- name: Create or update key/value pair in aws parameter store
   ssm_parameter_store:
     name: "Hello"
     description: "This is your first key"
@@ -85,7 +85,7 @@ EXAMPLES = '''
     state: absent
   register: result
 
-- name: Create or update secure key/vaule pair in aws parameter store
+- name: Create or update secure key/value pair in aws parameter store
   ssm_parameter_store:
     name: "Hello"
     description: "This is your first key"
